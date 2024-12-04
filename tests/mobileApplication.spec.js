@@ -5,7 +5,7 @@ test.describe('Automation Tests for mobile application', () => {
     test.beforeEach(async ({ page }) => {
         await loginToAsana(page);
     });
-
+// tests   1
     test('Verify "Push notification system" is in the "To Do" column', async ({ page }) => {
         const ele = await page.locator(`xpath=//h2[./text()='Mobile Application']`);
         await ele.click();
@@ -17,7 +17,7 @@ test.describe('Automation Tests for mobile application', () => {
             'Feature'
         ]);
     });
-
+//test 2
     test('Verify "Offline mode" is in the "In Progress" column', async ({ page }) => {
         const ele = await page.locator(`xpath=//h2[./text()='Mobile Application']`);
         await ele.click();
@@ -31,7 +31,7 @@ test.describe('Automation Tests for mobile application', () => {
         ]);
 
     });
-
+// test 3
     test('Verify "App icon design" is in the "Done" column', async ({ page }) => {
         const ele = await page.locator(`xpath=//h2[./text()='Mobile Application']`);
         await ele.click();
